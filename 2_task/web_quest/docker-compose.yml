@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    django:
+        build: web_quest
+        volumes:
+            - ./web_quest:/code
+        ports:
+            - "8000:8000"
